@@ -6,14 +6,14 @@ import { useState } from 'react'
 import { Check, Server, Cloud, Zap, Terminal, CreditCard, Database, Workflow, Monitor, ArrowRight, Shield, HardDrive, Globe, Clock, ChevronRight, Star } from 'lucide-react'
 
 const plans = [
-  { name: 'KVM VPS 2GB', cpu: '1 vCPU', ram: '2GB RAM', storage: '25GB NVMe SSD', bandwidth: '1TB Transfer', monthly: 5, yearly: 50, icon: Server, color: 'from-blue-600 to-cyan-600', popular: false },
-  { name: 'KVM VPS 4GB', cpu: '2 vCPU', ram: '4GB RAM', storage: '50GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 9, yearly: 90, icon: Server, color: 'from-indigo-600 to-purple-600', popular: true },
-  { name: 'KVM VPS 8GB', cpu: '4 vCPU', ram: '8GB RAM', storage: '100GB NVMe SSD', bandwidth: '4TB Transfer', monthly: 17, yearly: 170, icon: Server, color: 'from-purple-600 to-pink-600', popular: false },
-  { name: 'KVM VPS 10GB', cpu: '6 vCPU', ram: '10GB RAM', storage: '150GB NVMe SSD', bandwidth: '6TB Transfer', monthly: 24, yearly: 240, icon: Server, color: 'from-pink-600 to-red-600', popular: false },
-  { name: 'Supabase Managed', cpu: 'Auto-scaling Cluster', ram: 'Managed Memory', storage: 'Unlimited Database', bandwidth: 'Unlimited API Calls', monthly: 15, yearly: 150, icon: Database, color: 'from-green-600 to-emerald-600', popular: false },
-  { name: 'n8n Automation', cpu: 'Dedicated Instance', ram: '2GB RAM', storage: '20GB SSD', bandwidth: 'Unlimited Workflows', monthly: 12, yearly: 120, icon: Workflow, color: 'from-orange-600 to-amber-600', popular: false },
-  { name: 'Linux Dev Server', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 10, yearly: 100, icon: Terminal, color: 'from-teal-600 to-cyan-600', popular: false },
-  { name: 'PowerShell Remote', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 11, yearly: 110, icon: Monitor, color: 'from-violet-600 to-indigo-600', popular: false },
+  { name: 'KVM VPS 2GB', cpu: '1 vCPU', ram: '2GB RAM', storage: '25GB NVMe SSD', bandwidth: '1TB Transfer', monthly: 50, yearly: 500, icon: Server, color: 'from-blue-600 to-cyan-600', popular: false },
+  { name: 'KVM VPS 4GB', cpu: '2 vCPU', ram: '4GB RAM', storage: '50GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 90, yearly: 900, icon: Server, color: 'from-indigo-600 to-purple-600', popular: true },
+  { name: 'KVM VPS 8GB', cpu: '4 vCPU', ram: '8GB RAM', storage: '100GB NVMe SSD', bandwidth: '4TB Transfer', monthly: 170, yearly: 1700, icon: Server, color: 'from-purple-600 to-pink-600', popular: false },
+  { name: 'KVM VPS 10GB', cpu: '6 vCPU', ram: '10GB RAM', storage: '150GB NVMe SSD', bandwidth: '6TB Transfer', monthly: 240, yearly: 2400, icon: Server, color: 'from-pink-600 to-red-600', popular: false },
+  { name: 'Supabase Managed', cpu: 'Auto-scaling Cluster', ram: 'Managed Memory', storage: 'Unlimited Database', bandwidth: 'Unlimited API Calls', monthly: 150, yearly: 1500, icon: Database, color: 'from-green-600 to-emerald-600', popular: false },
+  { name: 'n8n Automation', cpu: 'Dedicated Instance', ram: '2GB RAM', storage: '20GB SSD', bandwidth: 'Unlimited Workflows', monthly: 120, yearly: 1200, icon: Workflow, color: 'from-orange-600 to-amber-600', popular: false },
+  { name: 'Linux Dev Server', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 100, yearly: 1000, icon: Terminal, color: 'from-teal-600 to-cyan-600', popular: false },
+  { name: 'PowerShell Remote', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB NVMe SSD', bandwidth: '2TB Transfer', monthly: 110, yearly: 1100, icon: Monitor, color: 'from-violet-600 to-indigo-600', popular: false },
 ]
 
 const allFeatures = [
@@ -41,12 +41,12 @@ const faqs = [
 ]
 
 const comparisons = [
-  { feature: 'Starting Price', hardshell: '$50/yr', aws: '$62/yr', digitalocean: '$48/yr', linode: '$60/yr' },
+  { feature: 'Starting Price', hardshell: '$500/yr', aws: '$620/yr', digitalocean: '$480/yr', linode: '$600/yr' },
   { feature: 'Deploy Time', hardshell: '< 60s', aws: '2-5 min', digitalocean: '55s', linode: '1-2 min' },
-  { feature: 'DDoS Protection', hardshell: 'Included', aws: '$3,000/mo', digitalocean: 'Basic', linode: 'Basic' },
+  { feature: 'DDoS Protection', hardshell: 'Included', aws: '$30,000/mo', digitalocean: 'Basic', linode: 'Basic' },
   { feature: 'NVMe Storage', hardshell: 'All Plans', aws: 'Extra Cost', digitalocean: 'Premium', linode: 'Some Plans' },
-  { feature: 'Backups', hardshell: 'Free Daily', aws: 'Extra Cost', digitalocean: '20% Extra', linode: '$2.50/mo' },
-  { feature: 'Support', hardshell: '24/7 Free', aws: '$29+/mo', digitalocean: 'Paid Plans', linode: '24/7 Free' },
+  { feature: 'Backups', hardshell: 'Free Daily', aws: 'Extra Cost', digitalocean: '20% Extra', linode: '$25/mo' },
+  { feature: 'Support', hardshell: '24/7 Free', aws: '$290+/mo', digitalocean: 'Paid Plans', linode: '24/7 Free' },
 ]
 
 export default function PricingPage() {
