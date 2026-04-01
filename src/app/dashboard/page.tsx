@@ -82,7 +82,7 @@ export default function DashboardPage() {
           <div className="glass rounded-2xl p-8">
             <h2 className="text-xl font-bold mb-6">Billing Overview</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-zinc-900 rounded-xl p-5"><p className="text-sm text-zinc-500 mb-1">Current Plan</p><p className="text-2xl font-bold">$260/mo</p></div>
+              <div className="bg-zinc-900 rounded-xl p-5"><p className="text-sm text-zinc-500 mb-1">Current Plan</p><p className="text-2xl font-bold">$3,900/mo</p></div>
               <div className="bg-zinc-900 rounded-xl p-5"><p className="text-sm text-zinc-500 mb-1">Active Servers</p><p className="text-2xl font-bold">3</p></div>
               <div className="bg-zinc-900 rounded-xl p-5"><p className="text-sm text-zinc-500 mb-1">Next Payment</p><p className="text-2xl font-bold">Apr 1</p></div>
             </div>

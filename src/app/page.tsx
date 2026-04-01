@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 import { Server, Cpu, Shield, Zap, Cloud, Terminal, ArrowRight, Check, Globe, HardDrive, Lock, Clock, Users, Code, Gauge, Database, Workflow, Monitor, Star, ChevronRight, Play } from 'lucide-react'
 
 const products = [
-  { name: 'KVM VPS 2GB', cpu: '1 vCPU', ram: '2GB RAM', storage: '25GB NVMe', price: 500, icon: Server, color: 'from-blue-600 to-cyan-600' },
-  { name: 'KVM VPS 4GB', cpu: '2 vCPU', ram: '4GB RAM', storage: '50GB NVMe', price: 900, icon: Server, popular: true, color: 'from-indigo-600 to-purple-600' },
-  { name: 'KVM VPS 8GB', cpu: '4 vCPU', ram: '8GB RAM', storage: '100GB NVMe', price: 1700, icon: Cpu, color: 'from-purple-600 to-pink-600' },
-  { name: 'KVM VPS 10GB', cpu: '6 vCPU', ram: '10GB RAM', storage: '150GB NVMe', price: 2400, icon: Cpu, color: 'from-pink-600 to-red-600' },
-  { name: 'Supabase Managed', cpu: 'Auto-scaling', ram: 'Managed', storage: 'Unlimited DB', price: 1500, icon: Database, color: 'from-green-600 to-emerald-600' },
-  { name: 'n8n Automation', cpu: 'Dedicated', ram: '2GB RAM', storage: '20GB SSD', price: 1200, icon: Workflow, color: 'from-orange-600 to-amber-600' },
-  { name: 'Linux Dev Server', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB SSD', price: 1000, icon: Terminal, color: 'from-teal-600 to-cyan-600' },
-  { name: 'PowerShell Remote', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB SSD', price: 1100, icon: Monitor, color: 'from-violet-600 to-indigo-600' },
+  { name: 'KVM VPS 2GB', cpu: '1 vCPU', ram: '2GB RAM', storage: '25GB NVMe', price: 7500, icon: Server, color: 'from-blue-600 to-cyan-600' },
+  { name: 'KVM VPS 4GB', cpu: '2 vCPU', ram: '4GB RAM', storage: '50GB NVMe', price: 13500, icon: Server, popular: true, color: 'from-indigo-600 to-purple-600' },
+  { name: 'KVM VPS 8GB', cpu: '4 vCPU', ram: '8GB RAM', storage: '100GB NVMe', price: 25500, icon: Cpu, color: 'from-purple-600 to-pink-600' },
+  { name: 'KVM VPS 10GB', cpu: '6 vCPU', ram: '10GB RAM', storage: '150GB NVMe', price: 36000, icon: Cpu, color: 'from-pink-600 to-red-600' },
+  { name: 'Supabase Managed', cpu: 'Auto-scaling', ram: 'Managed', storage: 'Unlimited DB', price: 22500, icon: Database, color: 'from-green-600 to-emerald-600' },
+  { name: 'n8n Automation', cpu: 'Dedicated', ram: '2GB RAM', storage: '20GB SSD', price: 18000, icon: Workflow, color: 'from-orange-600 to-amber-600' },
+  { name: 'Linux Dev Server', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB SSD', price: 15000, icon: Terminal, color: 'from-teal-600 to-cyan-600' },
+  { name: 'PowerShell Remote', cpu: '2 vCPU', ram: '4GB RAM', storage: '40GB SSD', price: 16500, icon: Monitor, color: 'from-violet-600 to-indigo-600' },
 ]
 
 const features = [
@@ -99,7 +99,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto mb-10 leading-relaxed">
               KVM VPS, Supabase, n8n, Linux servers — all provisioned instantly on enterprise hardware.
-              Developer-first cloud infrastructure from Silicon Valley. Starting at <span className="text-white font-semibold">$500/year</span>.
+              Developer-first cloud infrastructure from Silicon Valley. Starting at <span className="text-white font-semibold">$7,500/year</span>.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
               <Link href="/signup" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all glow-btn flex items-center gap-2">
